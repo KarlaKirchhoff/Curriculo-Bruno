@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@200..800&family=Oleo+Script:wght@400;700&family=Share+Tech+Mono&family=Unlock&family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Tribal Dragon';
+    src: url('TribalDragon.ttf');
+}
+
+@font-face {
+    font-family: 'Water Dragon';
+    src: url('WaterDragon.ttf');
+}
+
+:root{
+    --paddingpg: 70px;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+p,li{
+    font-family: 'Courier Prime',monospace;
+}
+
+ul, li{
+    list-style: none;
+}
+
+body{
+    background-color: rgb(4, 5, 37);
+}
+
+.banner{
+    height: 300px; width: 100%;
+    background-image: url('../img/bg1.jpg');
+    background-size: cover;
+    background-position-y: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner h1{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    position: relative;
+    gap: 15px;
+    top: 270px;
+    margin: 0 0 0 var(--paddingpg);
+    padding: 5px 10px;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.521);
+    font-family: 'Yeseva One';
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    z-index: 1;
+}
+
+.banner h1, .banner span{
+    color: aqua;
+    text-shadow: 0 0 5px;
+}
+
+.banner span{
+    color: rgb(43, 116, 226);
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.356);
+    height: fit-content;
+    position: relative;
+    top: 270px;
+    margin: 50px 70px;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav li{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+
+    transition: background-color .4s;
+}
+
+nav li:hover{
+    background-color: rgb(52, 94, 122);
+    cursor: pointer;
+}
+
+.perfil{
+    display: flex;
+    gap: 20px;
+    padding: 50px var(--paddingpg);
+    /* background-color: rgba(127, 225, 255, 0.349); */
+    background-color: rgb(52, 94, 122);
+}
+
+.perfil .imgarea{
+    height: 250px;
+    width: 2000px;
+    background-color: red;
+}
+
+.perfil .imgarea img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.perfil .perfil-informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil-informacoes h2{
+    font-family: 'Water Dragon';
+    font-size: 45px;
+}
+
+.perfil-informacoes .linguagens{
+    display: flex;
+    justify-content: space-between;
+}
+
+.perfil-informacoes h3{
+    font-family: 'Courier Prime', monospace;
+}
+
+.perfil-informacoes .linguagens li{
+    border: 1px solid white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.perfil-informacoes .linguagens li span{
+    text-transform: lowercase;
+}
+
+.formacao-academica{
+    padding: var(--paddingpg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formacao-academica h3{
+    font-family: 'Water Dragon', monospace;
+    font-size: 70px;
+    color: rgb(255, 0, 106);
+    text-shadow: 0 0 5px;
+    text-align: center;
+}
